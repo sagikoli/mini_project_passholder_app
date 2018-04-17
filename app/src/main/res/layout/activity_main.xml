@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abcd"
+    tools:context="com.example.sagik.mini_project_firebase.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="40dp"
+                android:padding="160dp"
+                android:background="@drawable/title887366818" />
+
+            <EditText
+                android:background="@drawable/border_thin"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textColorHint="#000"
+                />
+
+            <EditText
+                android:background="@drawable/border_thin"
+                android:id="@+id/passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="* * * * * * *"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textColorHint="#000" />
+
+            <TextView
+                android:id="@+id/forget_passwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:padding="0dp"
+                android:text="Forgot your password?"
+                android:textColor="#000" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:buttonTint="#000"
+                android:layout_marginTop="15dp"
+                android:text="Remember Me"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:drawableRight="@android:color/black"
+                android:drawableStart="#000000"
+                android:drawableLeft="#000000"
+                android:drawableEnd="#000000"
+                android:fadingEdge="horizontal|vertical"
+                android:text="Log in to your account"
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:onClick="Login"
+                android:background="@drawable/border_thin"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
